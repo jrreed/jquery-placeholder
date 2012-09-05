@@ -22,7 +22,7 @@
 			var $this = this,
         $placeholders = $this.filter((isInputSupported ? 'textarea' : ':input') + '[placeholder]')
       
-      if (args.length > 0 && args[0] == 'destroy') {
+      if (arguments.length > 0 && arguments[0] == 'destroy') {
         $placeholders
           .filter( function() { return $(this).data('placeholder-enabled') === true; })
           .trigger('focus.placeholder')
