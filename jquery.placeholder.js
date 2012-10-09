@@ -28,6 +28,7 @@
           .trigger('focus.placeholder')
           .removeData('placeholder-enabled')
           .removeData('placeholder-id')
+          .removeClass('placeholder')
           .each( function() { var $replacement; if ($replacement = $(this).data('placeholder-textinput')){ $replacement.remove(); }}) 
           .removeData('placeholder-textinput')
           .unbind('.placeholder');
